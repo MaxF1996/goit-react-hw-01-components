@@ -26,3 +26,20 @@ img {
 ul {
   list-style: none;
 }
+
+.reset_table,
+.reset_table table tr,
+.reset_table tr td,
+.reset_table table tbody,
+.reset_table table thead,
+.reset_table table tfoot,
+.reset_table table tr th,
+.reset_table table tfoot tr tf {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-image: none;
+}
