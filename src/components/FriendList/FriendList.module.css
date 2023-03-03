@@ -3,7 +3,7 @@
   margin: 0 auto;
 }
 
-.friend-list .item {
+.item {
   margin: 20px auto;
   border-radius: 5px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
@@ -19,10 +19,10 @@
   border-radius: 50%;
 }
 
-.status.online {
+.online {
   background-color: green;
 }
 
-.status.offline {
+.offline {
   background-color: red;
 }
