@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid';
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
@@ -10,14 +11,15 @@ import transactions from '../transactions.json';
 export default function App() {
   return [
     <Profile
+      key={uuidv4()}
       username={user.username}
       tag={user.tag}
       location={user.location}
       avatar={user.avatar}
       stats={user.stats}
     />,
-    <Statistics title="Upload stats" stats={data} />,
-    <FriendList friends={friends} />,
-    <TransactionHistory items={transactions} />,
+    <Statistics key={uuidv4()} title="Upload stats" stats={data} />,
+    <FriendList key={uuidv4()} friends={friends} />,
+    <TransactionHistory key={uuidv4()} items={transactions} />,
   ];
 }
