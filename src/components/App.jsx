@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
 import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
