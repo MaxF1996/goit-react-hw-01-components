@@ -3,8 +3,8 @@ import Profile from './Profile/Profile';
 import Statistics from './Statistics/Statistics';
 import FriendList from './FriendList/FriendList';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
-import user from '../JSONS/user.json';
-import data from '../JSONS/data.json';
+import user from '../JSONS/user';
+import data from '../JSONS/data';
 import friends from '../JSONS/friends';
 import transactions from '../JSONS/transactions';
 
