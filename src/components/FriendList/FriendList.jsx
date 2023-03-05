@@ -1,4 +1,4 @@
-// import css from '../FriendList/FriendList.module.css';
+// import css from './FriendList/FriendList.module.css';
 import PropTypes from 'prop-types';
 import { FriendListContainer, FriendListLi, Status } from './FriendList.styled';
 
