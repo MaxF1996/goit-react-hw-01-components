@@ -1,5 +1,13 @@
-import css from './Statistics.module.css';
+// import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
+import {
+  StatisticsContainer,
+  Title,
+  StatList,
+  StatItem,
+  Label,
+  Percentage,
+} from './Statistics.styled';
 
 const Statistics = ({ title, stats }) => {
   const generateRandomColor = () => {
@@ -13,17 +21,17 @@ const Statistics = ({ title, stats }) => {
   };
 
   return (
-    <section className={css.statistics}>
-      {title && <h2 className={css.title}>{title}</h2>}
-      <ul className={css['stat-list']}>
+    <StatisticsContainer>
+      {title && <Title>{title}</Title>}
+      <StatList>
         {stats.map(({ id, label, percentage }) => (
-          <li key={id} className={css.item} style={{ backgroundColor: generateRandomColor() }}>
-            <span className={css.label}>{label}</span>
-            <span className={css.percentage}>{percentage}%</span>
-          </li>
+          <StatItem key={id} style={{ backgroundColor: generateRandomColor() }}>
+            <Label>{label}</Label>
+            <Percentage>{percentage}%</Percentage>
+          </StatItem>
         ))}
-      </ul>
-    </section>
+      </StatList>
+    </StatisticsContainer>
   );
 };
 

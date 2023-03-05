@@ -10,14 +10,15 @@ import transactions from '../transactions.json';
 export default function App() {
   return [
     <Profile
+      key="1"
       username={user.username}
       tag={user.tag}
       location={user.location}
       avatar={user.avatar}
       stats={user.stats}
     />,
-    <Statistics title="Upload stats" stats={data} />,
-    <FriendList friends={friends} />,
-    <TransactionHistory items={transactions} />,
+    <Statistics key="2" title="Upload stats" stats={data} />,
+    <FriendList key="3" friends={friends} />,
+    <TransactionHistory key="4" items={transactions} />,
   ];
 }
