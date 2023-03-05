@@ -14,7 +14,7 @@ const FriendList = ({ friends }) => {
 
 const FriendListItem = ({ avatar, name, isOnline, id }) => {
   return (
-    <FriendListLi key={id}>
+    <FriendListLi>
       <Status isOnline={isOnline}></Status>
       <img src={avatar} alt="User avatar" width="48" />
       <p>{name}</p>
