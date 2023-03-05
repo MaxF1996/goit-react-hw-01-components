@@ -9,17 +9,18 @@ import friends from '../JSONS/friends';
 import transactions from '../JSONS/transactions';
 
 export default function App() {
-  return [
-    <Profile
-      key={uuidv4()}
-      username={user.username}
-      tag={user.tag}
-      location={user.location}
-      avatar={user.avatar}
-      stats={user.stats}
-    />,
-    <Statistics key={uuidv4()} title="Upload stats" stats={data} />,
-    <FriendList key={uuidv4()} friends={friends} />,
-    <TransactionHistory key={uuidv4()} items={transactions} />,
-  ];
+  return (
+    <>
+      <Profile
+        username={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
+    </>
+  );
 }
